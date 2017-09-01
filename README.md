@@ -4,14 +4,14 @@
 * Ruby
 * Ruby on rail
 ## Install Ruby
-''' c
+```terminal
 apt-get install ruby
-'''
+```
 # Install Ruby on Rails
-''' c
+```
 gem install rails
-'''
+```
 # For test this project
-''' c
+```
 rails s
-'''
+```

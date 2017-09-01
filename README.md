@@ -3,15 +3,15 @@
 # Dependencies
 * Ruby
 * Ruby on rail
-# Install Ruby
-''' terminal
+## Install Ruby
+''' c
 apt-get install ruby
 '''
 # Install Ruby on Rails
-''' terminal
+''' c
 gem install rails
 '''
 # For test this project
-''' terminal
+''' c
 rails s
 '''

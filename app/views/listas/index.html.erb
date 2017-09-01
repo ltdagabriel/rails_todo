@@ -1,0 +1,19 @@
+<div class="container">
+  <p id='notice'><%= notice %></p>
+  <div class="list-group">
+    <% @listas.each do |lista| %>
+      <div class="list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1"><%= link_to lista.titulo, lista %></h5>
+          <small><%= time_ago_in_words(lista.updated_at - 1) %></small>
+        </div>
+        <p class="mb-1"><%= lista.descricao %></p>
+      </div>
+    <% end %>
+  </div>
+  <div class="list-group">
+    <div class="list-group-item navbar navbar-right">
+      <%= link_to "Nova Lista", new_lista_path, class:"btn btn-sm btn-outline-dark navbar-right" %>
+    </div>
+  </div>
+</div>

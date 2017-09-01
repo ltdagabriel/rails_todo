@@ -1,17 +1,24 @@
-# rails_todo
-#### lista de tarefas criada para o aprendizado de ruby on rails
-# Dependencies
-* Ruby
-* Ruby on rail
-## Install Ruby
-```terminal
-apt-get install ruby
-```
-# Install Ruby on Rails
-```
-gem install rails
-```
-# For test this project
-```
-rails s
-```
+# README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...

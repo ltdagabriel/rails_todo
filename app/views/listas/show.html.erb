@@ -1,0 +1,26 @@
+<div class="container">
+  <p id="notice"><%= notice %></p>
+
+  <blockquote class="blockquote text-center">
+  <p class="mb-0"><%= @lista.titulo %></p>
+  <footer class="blockquote-footer"><%= @lista.descricao %></footer>
+  </blockquote>
+
+  <ul class="list-group">
+    <% @asd = render @lista.tarefas %>
+
+    <div id="form">
+      <%= render "tarefas/form" %>
+    </div>
+    <%= @asd %>
+  </ul>
+
+  <div class="btn-group" role="group" aria-label="Basic example">
+    <%= link_to 'Editar', edit_lista_path(@lista), class:"btn btn-secondary" %>
+
+    <%= link_to 'Remover', lista_path(@lista), method: :delete, class:"btn btn-secondary", data: { confirm: "Voce tem certeza mano?" } %>
+
+    <%= link_to 'Voltar', listas_path, class:"btn btn-secondary" %>
+</div>
+
+</div>

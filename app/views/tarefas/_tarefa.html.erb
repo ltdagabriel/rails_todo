@@ -1,0 +1,22 @@
+
+  <div class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <% if tarefa.completada?%>
+        <strike>
+          <h5 class="mb-1 text-secondary"><%= tarefa.conteudo %></h5>
+        </strike>
+      <% else %>
+        <h5 class="mb-1 text-success"><%= tarefa.conteudo %></h5>
+      <% end %>
+      <div>
+          <%= link_to lista_tarefa_path(@lista, tarefa), method: :delete, data: { confirm: "Voce tem certeza?"} do %>
+               <i class="fa fa-trash"></i>
+           <% end %>
+           <% if !tarefa.completada?%>
+           <%= link_to completar_lista_tarefa_path(@lista, tarefa), method: :patch do %>
+   				  <i class="fa fa-check"></i>
+            <% end %>
+           <% end %>
+      </div>
+    </div>
+  </div>

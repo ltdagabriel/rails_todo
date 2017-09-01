@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  conteudo: asd
+  lista: one
+one2:
+  conteudo: DSA
+  lista: one
+one3:
+  conteudo: ACCS
+  lista: one
+one4:
+  conteudo: AS
+  lista: one
+one5:
+  conteudo: MI
+  lista: one
+one6:
+  conteudo: Asd
+  lista: one
+one7:
+  conteudo: Asda
+  lista: one
+
+two:
+  conteudo: MyString333
+  lista: two

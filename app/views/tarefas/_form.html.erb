@@ -1,0 +1,10 @@
+<div class="col-sm-12">
+  <%= form_for([@lista, @lista.tarefas.build]) do |f| %>
+  <div class="form-group col-sm-6">
+  	<%= f.text_field :conteudo, required: true,  placeholder: "Digite sua nova tarefa", class:"form-control" %>
+  </div>
+  <div class="form-group col-sm-6">
+    <%= f.submit class:"form-control" %>
+  </div>
+  <% end %>
+</div>
